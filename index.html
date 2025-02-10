@@ -116,7 +116,7 @@
                 <p class="event-boda-ceremonia-regalos">Lo más importante es tu presencia,</p>
                 <p class="event-boda-ceremonia-regalos">pero si deseas hacernos un regalo aquí</p>
                 <p class="event-boda-ceremonia-regalos">tienes nuestros datos</p>
-                <button title="dato-bancarios" type="button" class="event-boda-ceremonia-boton event-boda-ceremonia-botonRegalo">VER DATOS BANCARIOS</button>
+                <button title="dato-bancarios" type="button" class="event-boda-ceremonia-boton event-boda-ceremonia-botonRegalo" onclick="openPopup()">VER DATOS BANCARIOS</button>
             </div>
             <div class="event-boda-ceremonia event-boda-ceremonia-seccion"><!-- Confirmar asistencia  -->
                 <h4 class="animate__animated">CONFIRMAR ASISTENCIA</h4>
@@ -138,6 +138,18 @@
             <div class="event-boda-ceromina-seccionUlt">
                 <h3 class="event-boda-ceremonia-esperamos animate__animated">Te esperamos</h3>
                 <h4 class="event-boda-ceremonia-nombres animate__animated">Jaz y Gonza</h4>
+            </div>
+        </div>
+        <!--Pop Up-->
+        <div class="popup-overlay" id="popup">
+            <div class="popup-content">
+                <h3>WESTER UNION</h3>
+                <p>DNI: 43.862.898</p>
+                <P>DIRECCIÓN: Buenos Aires, Argentina</P>
+                <h3>UALA</h3>
+                <p>CBU: 0000007900204386289844</p>
+                <p>ALIAS: GONZAA2001.UALA</p>
+                <button class="close-btn" onclick="closePopup()">Cerrar</button>
             </div>
         </div>
     <script src="./index.js"></script>

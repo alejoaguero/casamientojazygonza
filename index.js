@@ -57,3 +57,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     elements.forEach(element => observer.observe(element));
 });
+
+
+/** Pop up */
+
+function openPopup() {
+    document.getElementById("popup").classList.add("active");
+}
+
+function closePopup() {
+    document.getElementById("popup").classList.remove("active");
+}
+
+// Cerrar si se hace clic fuera del contenido
+document.getElementById("popup").addEventListener("click", function(event) {
+    if (event.target === this) {
+        closePopup();
+    }
+});
