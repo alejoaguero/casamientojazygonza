@@ -1,0 +1,398 @@
+@font-face {
+    font-family: Fathers;
+    src: url('/archivos/FathersRegular.ttf');
+}
+@font-face {
+    font-family: good-matcha;
+    src: url('/archivos/Good\ Matcha.otf');
+}
+@font-face {
+    font-family: best;
+    src: url('/archivos/Best\ Holiday.ttf');
+}
+
+
+
+/*Animaciones*/
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite; /* Loop infinito */
+    animation-iteration-count: infinite; /* Loop infinito */
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+
+
+html, body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.body-invite{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/*1° seccion - Imagen fondo y presentanción */
+
+.seccion-primary{
+    background-image: url(/archivos/foto-principal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    max-width: 100vw;
+    background-color: rgba(255, 255, 255, 0.2); /* Negro con 50% de opacidad */
+    position: relative;
+}
+
+.letter-title{
+    padding-top: 10px;
+    font-family:Fathers,sans-serif;
+    font-size: 45px;
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    width: 100%;
+    bottom: 50%;
+    text-shadow:rgba(0, 0, 0, 0.5) 5px 1px;
+    position: absolute;
+    bottom: 46px;
+    left: -5px;
+}
+
+.letter-subtitle{
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    letter-spacing: 2px;
+    padding-top: 13px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; /* Opcional, para centrar el texto */
+    margin-bottom: 20px;
+    text-shadow: rgba(0, 0, 0, 0.4) 2px 1px;
+}
+
+/* 2 sección  - Cuenta regresiva y audio */
+
+.audio-invite{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.audio-invite-mp3{
+    margin: 15px 0px;
+    width: 300px;
+    
+}
+
+.letter-inviteyou{
+    font-family: best;
+    font-size: 28px;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20pxpx;
+}
+
+.parrafo-inviteyou{
+    font-family: "Tajawal", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+
+.countdown{
+    display: flex;
+    justify-content: space-evenly;  
+    margin-top: 40px;
+}
+
+.countdown div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-fecha{
+    margin: 0px 7px;
+}
+
+.countdown-fecha-min{
+    margin: 0px 4px;
+}
+
+.time-wedding-text-fecha{
+    font-family: "Tajawal", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.countdown-title{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.time-wedding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c49a6c;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.time-wedding-text{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* 3° sección - Eventos */
+
+.event-boda{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.event-boda-ceremonia-copas{
+    width: 80px;
+}
+
+.event-boda-ceremonia h4{
+    font-size: 22px;
+    font-family: 'Raleway',serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.event-boda-ceremonia-lugar{
+    font-size: 15px;
+    margin: 5px 0px; 
+    font-family: 'Lora',serif;
+}
+
+.event-boda-ceremonia-fecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-boda-ceremonia-fecha1{
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Lora', sans-serif;
+}
+
+.event-boda-ceremonia-fecha2{
+    border-bottom: 1px solid black;
+    margin: 20px 0;
+    height: 30px; /* Alto */
+    border-left: 1px solid black;
+}
+
+.event-boda-ceremonia-fecha3{
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Lora',sans-serif;
+}
+
+.event-boda-ceremonia-boton{
+    background-color: #c49a6c; /* Marrón claro */
+    color: white; /* Letras blancas */
+    border: none;
+    padding: 13px 13px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 300;
+}   
+
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: auto; /* Filas automáticas */
+    gap: 5px; /* Espacio entre imágenes */
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    grid-template-rows: auto; /* Filas automáticas */
+    gap: 5px; /* Espacio entre las imágenes */
+    width: 85%;
+    max-width: 320px; /* Ajuste para móvil */
+}
+
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Configuración para que las imágenes se acomoden en el patrón específico */
+.collage-img1 {
+    grid-column: span 1; /* Imagen 1 en columna 1 */
+    grid-row: span 2; /* Imagen 1 ocupa 2 filas (vertical) */
+}
+
+.collage-img2 {
+    grid-column: span 1; /* Imagen 2 en columna 2 */
+    grid-row: span 2; /* Imagen 2 ocupa 2 filas (vertical) */
+}
+
+.collage-img3 {
+    grid-column: span 2; /* Imagen 3 ocupa ambas columnas */
+    grid-row: span 1; /* Imagen 3 en una fila (horizontal) */
+}
+
+.collage-img4 {
+    grid-column: span 1; /* Imagen 4 en columna 1 */
+    grid-row: span 2; /* Imagen 4 ocupa 2 filas (vertical) */
+}
+
+.collage-img5 {
+    grid-column: span 1; /* Imagen 5 en columna 2 */
+    grid-row: span 2; /* Imagen 5 ocupa 2 filas (vertical) */
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 320px) {
+    .collage {
+        grid-template-columns: 1fr 1fr; /* Mantener dos columnas */
+        grid-template-rows: auto; /* Filas automáticas */
+    }
+}
+/* Sección regalos */
+
+.event-boda-ceremonia-regalos{
+    font-family: "Tajawal", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.event-boda-ceremonia-botonRegalo{
+    margin-top: 15px;
+}
+
+
+/* Seccion formulario */
+form {
+    display: block;
+    width: 100%; /* Asegura que ocupe el 100% del ancho */
+}
+
+form input {
+    width: 98%; /* Hace que los campos ocupen el 100% del ancho disponible */
+    margin-bottom: 10px; /* Añade espacio entre los campos */
+    padding: 8px; /* Añade espacio interno a los campos */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
+}
+select {
+    width: 98%; /* Hace que los campos ocupen el 100% del ancho disponible */
+    margin-bottom: 10px; /* Añade espacio entre los campos */
+    padding: 8px; /* Añade espacio interno a los campos */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
+    color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+
+}
+
+input[type="submit"] {
+    width: auto; /* El botón de envío tiene un ancho adecuado */
+    padding: 10px 20px; /* Espacio extra para el botón */
+}
+
+.event-boda-ceremonia-mensajeform{
+    height: 100px;  
+    padding-bottom: 70px;
+}
+
+
+/*Ultima Sección*/
+.event-boda-ceromina-seccionUlt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.event-boda-ceremonia-esperamos{
+    font-family: Fathers,sans-serif;
+    font-size: 30px;
+    margin: 20px 0px 0px 0px;
+    padding: 0;
+    font-weight: 100;
+}
+
+.event-boda-ceremonia-nombres{
+    margin: 10px 0px;
+    padding: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: best,serif;
+    font-weight: 100;
+}
+
+/* Clases generales */
+
+.event-boda-ceremonia-seccion{
+    margin-top: 60px;
+}
+
+.event-boda-ceremonia-textDirec{
+    font-family: 'Lora', serif;
+    font-size: 13px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+}
