@@ -447,7 +447,17 @@ textarea::placeholder {
     transform: scale(1);
 }
 
+.text-popup-title{
+    font-family: 'Raleway', serif;
+}
 
+.text-popup{
+    font-family: 'Lora',serif;
+    font-size: 15px;
+}
+
+
+/* Dresscode */
 .dresscode{
     display: grid;
     grid-template-columns: repeat(3,50px);
@@ -486,3 +496,4 @@ textarea::placeholder {
 .colorf{
     background-color: #9E5F35;
 }
+
