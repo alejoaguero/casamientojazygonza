@@ -1,14 +1,14 @@
 @font-face {
     font-family: Fathers;
-    src: url('./archivos/FathersRegular.ttf');
+    src: url('archivos/FathersRegular.ttf');
 }
 @font-face {
     font-family: good-matcha;
-    src: url('./archivos/Good\ Matcha.otf');
+    src: url('archivos/Good\ Matcha.otf');
 }
 @font-face {
     font-family: best;
-    src: url('./archivos/Best\ Holiday.ttf');
+    src: url('archivos/Best\ Holiday.ttf');
 }
 
 
@@ -61,7 +61,7 @@ img{
 /*1° seccion - Imagen fondo y presentanción */
 
 .seccion-primary{
-    background-image: url('./archivos/foto-principal.jpg');
+    background-image: url('archivos/foto-principal.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
