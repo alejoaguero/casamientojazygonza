@@ -446,3 +446,43 @@ textarea::placeholder {
 .popup-overlay.active .popup-content {
     transform: scale(1);
 }
+
+
+.dresscode{
+    display: grid;
+    grid-template-columns: repeat(3,50px);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px 15px;
+    justify-content: center;
+}
+
+.dresscode-colors{
+    background-color: #c49a6c;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.colora{
+    background-color: #F2C9AE;
+}
+
+.colorb{
+    background-color: #E4AF99;
+}
+
+.colorc{
+    background-color: #E4AF99;
+}
+
+.colord{
+    background-color: #D67C54;
+}
+
+.colore{
+    background-color: #BF5E3B;
+}
+
+.colorf{
+    background-color: #9E5F35;
+}
